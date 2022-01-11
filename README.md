@@ -55,8 +55,11 @@ manim-render example_scenes.py OpeningManimExample
 2. Install a LaTeX distribution. [MiKTeX](https://miktex.org/download) is recommended.
 3. Install the remaining Python packages.
     ```sh
-    git clone https://github.com/3b1b/manim.git
+    git clone https://github.com/H2O-YT/manim.git
     cd manim
+    pip install virtualenv # if you don't have virtualenv installed
+    virtualenv venv
+    .\\venv\\Scripts\\activate
     pip install -e .
     manimgl example_scenes.py OpeningManimExample
     ```
@@ -70,8 +73,11 @@ manim-render example_scenes.py OpeningManimExample
    
 2. Install latest version of manim using these command.
     ```sh
-    git clone https://github.com/3b1b/manim.git
+    git clone https://github.com/H2O-YT/manim.git
     cd manim
+    pip install virtualenv # if you don't have virtualenv installed
+    virtualenv venv
+    source venv/bin/activate
     pip install -e .
     manimgl example_scenes.py OpeningManimExample
     ```
