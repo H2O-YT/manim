@@ -59,7 +59,7 @@ manim-render example_scenes.py OpeningManimExample
     cd manim
     pip install virtualenv # if you don't have virtualenv installed
     virtualenv venv
-    .\\venv\\Scripts\\activate
+    .\venv\Scripts\activate
     pip install -e .
     manimgl example_scenes.py OpeningManimExample
     ```
