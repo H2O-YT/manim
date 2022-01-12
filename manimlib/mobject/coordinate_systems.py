@@ -216,10 +216,10 @@ class CoordinateSystem():
     def slope_of_tangent(self, x, graph, **kwargs):
         return np.tan(self.angle_of_tangent(x, graph, **kwargs))
 
-    def get_tangent_line(self, x, graph, length=5, line_func=Line):
-        line = line_func(LEFT, RIGHT)
+    def get_tangent_line(self, x, graph, length=5, line_func=Line, dx=EPSILON, **kwargs):
+        line = line_func(LEFT, RIGHT, **kwargs)
         line.set_width(length)
-        line.rotate(self.angle_of_tangent(x, graph))
+        line.rotate(self.angle_of_tangent(x, graph, dx=dx))
         line.move_to(self.input_to_graph_point(x, graph))
         return line
 
@@ -265,10 +265,6 @@ class CoordinateSystem():
             fill_opacity=fill_opacity,
         )
         return result
-
-    def get_area_under_graph(self, graph, x_range, fill_color=BLUE, fill_opacity=1):
-        # TODO
-        pass
 
 
 class Axes(VGroup, CoordinateSystem):

@@ -1,0 +1,24 @@
+directories:
+  mirror_module_path: True
+  output: "/Users/benja/Programming/manim_gl/h2o/videos"
+  raster_images: "/Users/benja/Programming/manim_gl/h2o/images/raster"
+  vector_images: "/Users/benja/Programming/manim_gl/h2o/images/vector"
+  sounds: "/Users/benja/Programming/manim_gl/h2o/sounds"
+  data: "/Users/benja/Programming/manim_gl/h2o/data"
+  temporary_storage: "/Users/benja/Programming/manim_gl/h2o/manim_cache"
+universal_import_line: "from h2o_manim_basics import *"
+# tex:
+#   executable: "xelatex -no-pdf"
+#   template_file: "ctex_template.tex"
+#   intermediate_filetype: "xdv"
+style:
+  font: "CMU Serif"
+  background_color: "#000000"
+camera_qualities:
+  high:
+    resolution: "1920x1080"
+    frame_rate: 60
+  default_quality: "high"
+window_position: UR
+window_monitor: 0
+full_screen: False
